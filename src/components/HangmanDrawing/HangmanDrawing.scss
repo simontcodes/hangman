@@ -1,0 +1,23 @@
+.hangman {
+  position: relative;
+
+  &__base {
+    height: 10px;
+    width: 250px;
+    background-color: black;
+  }
+
+  &__tree {
+    height: 400px;
+    width: 10px;
+    background-color: black;
+    margin-left: 120px;
+  }
+
+  &__tree-top {
+    width: 200px;
+    height: 10px;
+    background-color: black;
+    margin-left: 120px;
+  }
+}
