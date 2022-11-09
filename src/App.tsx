@@ -19,7 +19,9 @@ function App() {
 
       <HangmanDrawing />
       <HangmanWord />
-      <Keyboard />
+      <div className="key-container">
+        <Keyboard />
+      </div>
     </div>
   );
 }
