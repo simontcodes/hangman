@@ -1,19 +1,29 @@
 import React from "react";
 import "./HangmanWord.scss";
 
-type Props = {};
+type Props = {
+  guessedLetters: string[];
+  wordToGuess: string;
+  reveal?: boolean;
+};
 
-export default function HangmanWord({}: Props) {
-  const word = "test";
-  const guessedLetters = ["t"];
+export default function HangmanWord({
+  guessedLetters,
+  wordToGuess,
+  reveal = false,
+}: Props) {
   return (
     <div className="word">
-      {word.split("").map((letter, index) => (
+      {wordToGuess.split("").map((letter, index) => (
         <span key={index} className="word__letter">
           <span
-            className={
+            className={`${
               !guessedLetters.includes(letter) ? "word__letter--hidden" : ""
-            }
+            } ${
+              !guessedLetters.includes(letter) && reveal
+                ? "word__letter--loser"
+                : ""
+            }`}
           >
             {letter}
           </span>
