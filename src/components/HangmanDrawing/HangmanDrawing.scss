@@ -20,4 +20,76 @@
     background-color: black;
     margin-left: 120px;
   }
+
+  &__noose {
+    height: 50px;
+    width: 10px;
+    background-color: black;
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+}
+
+.head {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 10px solid black;
+  top: 50px;
+  right: -30px;
+  position: absolute;
+}
+
+.body {
+  width: 10px;
+  height: 100px;
+  background-color: black;
+  top: 120px;
+  right: 0;
+  position: absolute;
+}
+
+.right-arm {
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  top: 150px;
+  right: -100px;
+  position: absolute;
+  rotate: -30deg;
+  transform-origin: left bottom;
+}
+
+.left-arm {
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  top: 150px;
+  right: 10px;
+  position: absolute;
+  rotate: 30deg;
+  transform-origin: right bottom;
+}
+
+.right-leg {
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  top: 210px;
+  right: -90px;
+  position: absolute;
+  rotate: 60deg;
+  transform-origin: left bottom;
+}
+
+.left-leg {
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  top: 210px;
+  right: 0;
+  position: absolute;
+  rotate: -60deg;
+  transform-origin: right bottom;
 }
