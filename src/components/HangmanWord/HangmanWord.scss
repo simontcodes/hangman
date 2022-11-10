@@ -5,13 +5,18 @@
   font-weight: bold;
   text-transform: uppercase;
   font-family: monospace;
+  color: black;
 
   &__letter {
     border-bottom: 0.1em solid black;
 
     &--hidden {
-      //   display: none;
       visibility: hidden;
+    }
+
+    &--loser {
+      color: red;
+      visibility: visible;
     }
   }
 }
